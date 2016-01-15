@@ -1,0 +1,47 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculate Age</title>
+</head>
+
+<body>
+  <h3 class="text-center title">/Meteor Age Calculator/</h3>
+
+  {{> age}}
+</body>
+
+<template name="age">
+    <div class="container-fluid wrapper">
+      <div class="row">
+        <div class="col-xs-12">
+          <input name="name" type="text" class="form-control" placeholder="Name"/>
+        </div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-xs-6">
+          <input name="month" type="number" class="form-control" min="1" max="12" placeholder="Month"/>
+        </div>
+        <div class="col-xs-6">
+          <input name="year" type="number" class="form-control" min="1900" max="2016" placeholder="Year*"/>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <div class="col-xs-6">
+          <button class="calculate btn btn-primary btn-block">Calculate</button>
+        </div>
+        <div class="col-xs-6">
+          <button class="clear btn btn-default btn-block">Clear</button>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-xs-12">
+          <p class="text-center">{{name}} {{age}}</p>
+        </div>
+      </div>
+    </div>
+
+</template>

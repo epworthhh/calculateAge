@@ -1,0 +1,8 @@
+/* CSS declarations go here */
+
+p { font-size: 20px; color: #ADADAD;}
+input { border-radius: 15px !important;}
+button { border-radius: 15px !important;}
+
+.wrapper { padding-top: 10px;}
+.title { color: #636667;}
